@@ -79,7 +79,7 @@ func t1(obj interface{}) {
 ```
 
 ### Reflection Function Map 实现
-```
+```go
 package reflect
 
 import (
@@ -140,7 +140,7 @@ func (m *MapFunc) Call(key string,params ...interface{}) (result []reflect.Value
 }
 ```
 测试
-```
+```go
 func TestReflectMap(t *testing.T) {
 	sp := New()
 
